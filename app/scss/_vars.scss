@@ -1,4 +1,7 @@
-$black-900: #020305;
+$yellow-900: #ffa801;
+$black-800: #152536;
+$black-600: #6c757d;
+$black-500: #efefef;
 
 @function max($numbers...) {
   @return m#{a}x(#{$numbers});
