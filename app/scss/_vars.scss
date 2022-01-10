@@ -1,12 +1,14 @@
-$yellow-900: #ffa801;
-$black-800: #152536;
-$black-600: #6c757d;
-$black-500: #efefef;
+//colors
+$chrome-yellow: #ffa801;
+$yankees-blue: #152536;
+$aurometalsaurus: #6c757d;
+$bright-gray: #efefef;
+$anti-flash-white: #f1f1f1;
 
 @function max($numbers...) {
-  @return m#{a}x(#{$numbers});
+	@return m#{a}x(#{$numbers});
 }
 
 @function min($numbers...) {
-  @return m#{i}n(#{$numbers});
+	@return m#{i}n(#{$numbers});
 }

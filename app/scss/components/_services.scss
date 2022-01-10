@@ -1,0 +1,61 @@
+.services {
+	padding: 35px 0 40px;
+	background-color: $bright-gray;
+
+	&__link {
+		display: block;
+		max-width: 800px;
+		width: 100%;
+		margin: 0 auto;
+		padding: 20px 93px;
+		margin-bottom: 25px;
+		font-size: 24px;
+		font-weight: 700;
+		color: #fff;
+		border-radius: 100px;
+		transition: color 0.5s ease-in-out;
+
+		&:hover {
+			color: $aurometalsaurus;
+		}
+	}
+
+	&__text {
+		text-align: center;
+		font-size: 18px;
+
+		&--first {
+			margin-bottom: 30px;
+		}
+
+		&--bold {
+			font-weight: 700;
+		}
+	}
+}
+
+@media (max-width: 1100px) {
+	.services {
+		&__link {
+			text-align: center;
+			font-size: 18px;
+		}
+
+		&__text {
+			font-size: 14px;
+		}
+	}
+}
+
+@media (max-width: 650px) {
+	.services {
+		&__title {
+			margin-bottom: 50px;
+			font-size: 18px;
+		}
+
+		&__link {
+			font-size: 14px;
+		}
+	}
+}

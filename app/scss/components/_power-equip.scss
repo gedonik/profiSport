@@ -1,0 +1,255 @@
+.categories {
+	margin-bottom: 35px;
+	padding: 35px 130px 45px 35px;
+	box-shadow: 0px 2.51651px 15.7282px rgba(0, 0, 0, 0.19);
+	border-radius: 6.2px;
+
+	&__title {
+		margin-bottom: 25px;
+	}
+
+	&__item {
+		transition: color 0.5s ease-in-out;
+
+		&:not(:last-child) {
+			margin-bottom: 12px;
+		}
+
+		&:hover {
+			color: $chrome-yellow;
+		}
+	}
+
+	&__item--active {
+		color: $chrome-yellow;
+	}
+}
+
+.power-equip {
+	&__filter-list {
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 35px;
+	}
+
+	&__filter-item {
+		position: relative;
+
+		&::before {
+			position: absolute;
+			top: 0;
+			left: 0;
+			padding: 7px 17px;
+			color: #fff;
+			background-color: $chrome-yellow;
+			box-shadow: 0px 2.51651px 15.7282px rgba(0, 0, 0, 0.11);
+			border-radius: 24.536px;
+			z-index: 10;
+		}
+	}
+
+	&--filter {
+		width: 230px;
+
+		&::before {
+			content: 'Сортировка';
+		}
+	}
+
+	&--view {
+		width: 160px;
+
+		&::before {
+			content: 'Вид';
+		}
+	}
+
+	&--show {
+		width: 160px;
+
+		&::before {
+			content: 'Позакать';
+		}
+	}
+
+	&__list {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-gap: 35px;
+		margin-bottom: 53px;
+	}
+
+	&__item {
+		display: flex;
+		flex-direction: column;
+		filter: drop-shadow(0px 4px 25px rgba(255, 168, 1, 0.15));
+		box-shadow: 0px 2.51651px 15.7282px rgba(0, 0, 0, 0.13);
+		border-radius: 10px;
+
+		&:hover {
+			.power-equip__descr {
+				background-color: $chrome-yellow;
+			}
+		}
+	}
+
+	&__img {
+		padding: 22px 30px 10px 30px;
+	}
+
+	&__descr {
+		width: 98%;
+		margin-bottom: 10px;
+		padding: 5px 13px;
+		text-transform: uppercase;
+		font-size: 10px;
+		font-weight: 700;
+		border-radius: 0px 9.43693px 9.43693px 0px;
+		background-color: $bright-gray;
+		transition: background-color 0.5s ease-in-out;
+	}
+
+	&__inner-text {
+		margin-top: auto;
+		margin-bottom: 9px;
+	}
+
+	&__text {
+		max-width: 150px;
+		width: 100%;
+		padding-left: 13px;
+		font-size: 8.81px;
+		line-height: 169.02%;
+		color: $yankees-blue;
+	}
+
+	&__inner-buy {
+		margin-top: auto;
+		display: flex;
+		align-items: center;
+		padding-left: 13px;
+		line-height: 169.02%;
+	}
+
+	&__available {
+		margin-right: 12px;
+		font-size: 8.81px;
+		color: $yankees-blue;
+
+		&--val {
+			text-transform: uppercase;
+			font-weight: 800;
+			color: $chrome-yellow;
+		}
+	}
+
+	&__buy-btn {
+		margin-bottom: 5px;
+		padding: 6px 25px;
+		text-transform: uppercase;
+		font-size: 11.32px;
+		font-weight: 700;
+		color: #fff;
+		border-radius: 1000px;
+		transition: all 0.5s ease-in-out;
+
+		&:hover {
+			color: $chrome-yellow;
+			background-color: #fff;
+			filter: drop-shadow(0px 4px 25px rgba(0, 0, 0, 0.1));
+		}
+	}
+}
+
+.choices {
+	width: 100%;
+}
+
+.choices__inner {
+	padding: 0;
+	margin: 0;
+	min-height: 33px;
+	text-align: right;
+	background-color: #fff;
+	border-color: $chrome-yellow;
+	border-radius: 24.536px;
+}
+
+.choices.is-open.is-focused,
+.choices.is-focused {
+	.choices__inner {
+		border-color: $chrome-yellow !important;
+		border-radius: 24.536px !important;
+	}
+}
+
+.choices[data-type*='select-one'] .choices__inner {
+	padding-bottom: 0px;
+}
+
+.choices__placeholder {
+	opacity: 1;
+}
+
+.choices__list--single .choices__item {
+	padding: 2px 12px 0 0;
+}
+
+.choices[data-type*='select-one']:after {
+	border: none;
+	width: 14px;
+	height: 14px;
+	margin-top: 0;
+	transform: translateY(-50%);
+	background-image: url('../images/sprite.svg#arrow-down');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	transition: transform 0.3s ease-in-out;
+}
+
+.choices[data-type*='select-one'].is-open::after {
+	margin-top: -15px;
+	transform: rotate(180deg) translateY(-50%);
+}
+
+.is-open .choices__list--dropdown {
+	word-break: unset;
+	border-color: $chrome-yellow;
+	border-radius: 10px;
+	border-top: none;
+	border-top-left-radius: unset;
+	border-top-right-radius: unset;
+}
+
+.choices__item.choices__item--choice {
+	padding: 10px;
+	text-align: right;
+}
+
+@media (max-width: 750px) {
+	.power-equip {
+		&__list {
+			grid-template-columns: repeat(2, 1fr);
+		}
+	}
+}
+
+@media (max-width: 650px) {
+	.power-equip {
+		&__filter-list {
+			flex-direction: column;
+			align-items: center;
+		}
+
+		&__filter-item {
+			&:not(:last-child) {
+				margin-bottom: 20px;
+			}
+		}
+
+		&__list {
+			grid-template-columns: repeat(1, 1fr);
+		}
+	}
+}

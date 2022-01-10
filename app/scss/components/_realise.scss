@@ -1,0 +1,261 @@
+.realise {
+	padding: 70px 0 120px;
+	background-color: rgba(229, 229, 229, 0.62);
+
+	&__title {
+		margin-bottom: 90px;
+	}
+
+	&__inner {
+		display: flex;
+		margin-bottom: 55px;
+	}
+
+	&__btn {
+		&:not(:last-child) {
+			margin-right: 35px;
+		}
+	}
+
+	&__btn {
+		padding: 12px 30px;
+		text-transform: uppercase;
+		font-size: 16px;
+		font-weight: 700;
+		color: #000;
+		background-color: #fff;
+		border-radius: 23px;
+		transition: all 0.5s ease-in-out;
+
+		&:hover {
+			color: #fff;
+			background-color: $chrome-yellow;
+		}
+	}
+
+	&__btn--active {
+		color: #fff;
+		background-color: $chrome-yellow;
+	}
+
+	&__slides {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__slide {
+		position: relative;
+		border-radius: 10px;
+		max-width: 350px;
+		transition: all 0.5s ease-in-out;
+
+		&:hover {
+			.realise__img {
+				filter: brightness(24%);
+				transition: all 0.5s ease-in-out;
+			}
+
+			.realise__text {
+				max-width: 350px;
+				width: 100%;
+				font-size: 18px;
+			}
+
+			.realise__button {
+				opacity: 1;
+				transition: all 0.5s ease-in-out;
+
+				&:hover {
+					background-color: $chrome-yellow;
+					color: #fff;
+				}
+			}
+		}
+	}
+
+	&__img {
+		position: relative;
+		border-radius: 10px;
+		filter: brightness(53%);
+	}
+
+	&__text {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		text-align: center;
+		text-transform: uppercase;
+		font-size: 22px;
+		font-weight: 700;
+		color: #fff;
+	}
+
+	&__button {
+		position: absolute;
+		left: 50%;
+		transform: translateX(-50%);
+		bottom: 10%;
+		padding: 8px 10px;
+		font-size: 18px;
+		border-radius: 25px;
+		outline: transparent;
+		border: transparent;
+		background-color: #fff;
+		cursor: pointer;
+		opacity: 0;
+	}
+}
+
+.swiper {
+	position: relative;
+	width: 100%;
+	min-height: 100%;
+}
+
+.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets
+	.swiper-pagination-bullet {
+	&:not(:last-child) {
+		margin-right: 17px;
+	}
+}
+
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+	bottom: 18px;
+}
+
+.swiper-pagination-bullet {
+	position: relative;
+	width: 6px;
+	height: 6px;
+	background-color: #000;
+	opacity: 1;
+
+	&:hover {
+		&:after {
+			content: '';
+			position: absolute;
+			width: 20px;
+			height: 20px;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			background-color: transparent;
+			border: 1px solid #000;
+			border-radius: 50%;
+		}
+	}
+}
+
+span.swiper-pagination-bullet.swiper-pagination-bullet-active {
+	position: relative;
+
+	&:after {
+		content: '';
+		position: absolute;
+		width: 20px;
+		height: 20px;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		background-color: transparent;
+		border: 1px solid #000;
+		border-radius: 50%;
+	}
+}
+
+.swiper-pagination {
+	text-align: start;
+	margin-left: 10%;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+	position: static;
+	display: inline-block;
+	margin-top: 5%;
+}
+
+.swiper-button-next {
+	margin-left: 1%;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+	font-size: 35px;
+}
+
+:root {
+	--swiper-theme-color: #000;
+}
+
+.gyms,
+.centers {
+	display: none;
+}
+
+@media (max-width: 1100px) {
+	.realise {
+		padding-bottom: 80px;
+
+		&__text {
+			font-size: 16px;
+		}
+
+		&__inner {
+			justify-content: center;
+		}
+
+		&__button {
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+
+		&__btn {
+			width: 150px;
+			height: 80px;
+			padding: 12px 15px;
+			font-size: 14px;
+		}
+
+		.realise__slide:hover .realise__text {
+			display: none;
+		}
+	}
+}
+
+@media (max-width: 650px) {
+	.realise {
+		padding-bottom: 50px;
+
+		&__title {
+			font-size: 18px;
+			margin-bottom: 50px;
+		}
+
+		&__inner {
+			margin-bottom: 30px;
+			flex-wrap: wrap;
+		}
+
+		&__btn {
+			margin-bottom: 20px;
+
+			&:not(:last-child) {
+				margin-right: 15px;
+			}
+		}
+	}
+
+	.swiper-horizontal > .swiper-pagination-bullets,
+	.swiper-pagination-bullets.swiper-pagination-horizontal,
+	.swiper-pagination-custom,
+	.swiper-pagination-fraction {
+		left: 40px;
+	}
+}

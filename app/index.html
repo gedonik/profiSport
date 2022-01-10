@@ -1,453 +1,751 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="theme-color" content="#efefef" />
+		<title>ProfiSport</title>
+		<link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+		<link rel="stylesheet" href="css/style.min.css" />
+	</head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ProfiSport</title>
-  <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
-  <link rel="stylesheet" href="css/style.min.css" />
-</head>
+	<body>
+		<header class="header">
+			<div class="container">
+				<div class="header__inner">
+					<a class="logo header__logo" href="#">
+						<img src="images/logo.svg" alt="logo" width="108" height="24" />
+					</a>
 
-<body>
-  <header class="header">
-    <div class="container">
-      <div class="header__inner">
-        <a class="logo header__logo" href="#">
-          <img src="images/logo.svg" alt="logo" width="108" height="24" />
-        </a>
+					<a class="header__inclusive" href="#">Зал «под ключ»</a>
 
-        <a class="header__inclusive" href="#">Зал «под ключ»</a>
+					<nav class="header__menu">
+						<div class="header__menu-btn">
+							<span></span>
+							<span></span>
+							<span></span>
+						</div>
 
-        <nav class="header__menu">
-          <ul class="header__list">
-            <li class="header__item">
-              <a class="header__link" href="#">О компании</a>
-            </li>
-            <li class="header__item">
-              <a class="header__link" href="#">Каталог</a>
-            </li>
-            <li class="header__item">
-              <a class="header__link" href="#">Проекты</a>
-            </li>
-            <li class="header__item">
-              <a class="header__link" href="#">Услуги</a>
-            </li>
-            <li class="header__item">
-              <a class="header__link" href="#">Контакты</a>
-            </li>
-          </ul>
-        </nav>
+						<ul class="header__list">
+							<li class="header__item">
+								<a class="header__link" href="#about">О компании</a>
+							</li>
+							<li class="header__item">
+								<a class="header__link" href="#catalog">Каталог</a>
+							</li>
+							<li class="header__item">
+								<a class="header__link" href="#realise">Проекты</a>
+							</li>
+							<li class="header__item">
+								<a class="header__link" href="#services">Услуги</a>
+							</li>
+							<li class="header__item">
+								<a class="header__link" href="#contacts">Контакты</a>
+							</li>
+						</ul>
+					</nav>
 
-        <div class="header__rate">
-          <a class="header__phone" href="tel:+74958394517">+7 (495) 839-45-17</a>
-          <!-- <p class="header__descr">Режим: с 9 до 22 ежедневно</p> -->
-        </div>
-        <form class="header__form" action="#">
-          <input class="header__input" type="text" />
-          <button class="btn header__search" type="button">
-            <svg width="10" height="10">
-              <use xlink:href="images/sprite.svg#search"></use>
-            </svg>
-          </button>
-        </form>
+					<div class="header__rate">
+						<a class="header__phone" href="tel:+74958394517"
+							>+7 (495) 839-45-17</a
+						>
+						<span class="header__descr">Режим: с 9 до 22 ежедневно</span>
+					</div>
+					<form class="header__form" action="#">
+						<input class="header__input" type="text" />
+						<button class="btn header__search" type="button">
+							<svg width="10" height="10">
+								<use xlink:href="images/sprite.svg#search"></use>
+							</svg>
+						</button>
+					</form>
 
-        <button class="btn header__user" type="button">Вход</button>
-      </div>
-    </div>
-  </header>
+					<button class="btn header__user" type="button">Вход</button>
+				</div>
+			</div>
+		</header>
 
-  <main class="main">
-    <section class="hero" style="background-image: url(images/header-bg.jpg)">
-      <div class="container">
-        <div class="hero__content">
-          <h1 class="hero__title">
-            Лучший <br />
-            Интернет-магазин спортивного оборудования
-          </h1>
-          <p class="hero__descr">
-            Уникальные предложение на рынке спортивного оборудования.
-          </p>
-          <button class="btn hero__btn" type="button">Подробнее</button>
-        </div>
+		<main class="main">
+			<section
+				class="hero"
+				style="background-image: url(images/header-bg.jpg)"
+				id="about"
+			>
+				<div class="container">
+					<div class="hero__content">
+						<h1 class="hero__title">
+							Лучший <br />
+							Интернет-магазин спортивного оборудования
+						</h1>
+						<p class="hero__descr">
+							Уникальные предложение на рынке спортивного оборудования.
+						</p>
+						<button class="btn hero__btn" type="button">Подробнее</button>
+					</div>
 
-        <div class="hero__reason">
-          <span class="hero__question">Почему мы?</span>
+					<div class="hero__reason">
+						<span class="hero__question">Почему мы?</span>
 
-          <ul class="hero__list">
-            <li class="hero__item">Скорость доставки</li>
-            <li class="hero__item">Отличное качество</li>
-            <li class="hero__item">Подход к каждому клиенту</li>
-            <li class="hero__item">Низкие цены</li>
-          </ul>
-        </div>
-      </div>
-    </section>
+						<ul class="hero__list">
+							<li class="hero__item">Скорость доставки</li>
+							<li class="hero__item">Отличное качество</li>
+							<li class="hero__item">Подход к каждому клиенту</li>
+							<li class="hero__item">Низкие цены</li>
+						</ul>
+					</div>
+				</div>
+			</section>
 
-    <section class="equipment">
-      <div class="container">
-        <h2 class="title equipment__title">
-          Оборудование<br />
-          для тренажерного зала
-        </h2>
+			<section class="equipment">
+				<div class="container">
+					<h2 class="title equipment__title">
+						Оборудование<br />
+						для тренажерного зала
+					</h2>
 
-        <ul class="equipment__list">
-          <li class="equipment__item">
-            <div class="equipment__content">
-              <h3 class="equipment__heading">Кардиотренажеры для зала</h3>
-              <a class="equipment__link" href="#">Подробнее</a>
-            </div>
-          </li>
-          <li class="equipment__item">
-            <div class="equipment__content">
-              <h3 class="equipment__heading">Кардиотренажеры для зала</h3>
-              <a class="equipment__link" href="#">Подробнее</a>
-            </div>
-          </li>
-          <li class="equipment__item">
-            <div class="equipment__content">
-              <h3 class="equipment__heading">Кардиотренажеры для зала</h3>
-              <a class="equipment__link" href="#">Подробнее</a>
-            </div>
-          </li>
-          <li class="equipment__item">
-            <div class="equipment__content">
-              <h3 class="equipment__heading">Кардиотренажеры для зала</h3>
-              <a class="equipment__link" href="#">Подробнее</a>
-            </div>
-          </li>
-          <li class="equipment__item">
-            <div class="equipment__content">
-              <h3 class="equipment__heading">Кардиотренажеры для зала</h3>
-              <a class="equipment__link" href="#">Подробнее</a>
-            </div>
-          </li>
-          <li class="equipment__item">
-            <div class="equipment__content">
-              <h3 class="equipment__heading">Кардиотренажеры для зала</h3>
-              <a class="equipment__link" href="#">Подробнее</a>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </section>
+					<ul class="equipment__list">
+						<li class="equipment__item">
+							<div class="equipment__content">
+								<h3 class="equipment__heading">Кардиотренажеры для зала</h3>
+								<a class="equipment__link" href="#">Подробнее</a>
+							</div>
+						</li>
+						<li class="equipment__item">
+							<div class="equipment__content">
+								<h3 class="equipment__heading">Кардиотренажеры для зала</h3>
+								<a class="equipment__link" href="#">Подробнее</a>
+							</div>
+						</li>
+						<li class="equipment__item">
+							<div class="equipment__content">
+								<h3 class="equipment__heading">Кардиотренажеры для зала</h3>
+								<a class="equipment__link" href="#">Подробнее</a>
+							</div>
+						</li>
+						<li class="equipment__item">
+							<div class="equipment__content">
+								<h3 class="equipment__heading">Кардиотренажеры для зала</h3>
+								<a class="equipment__link" href="#">Подробнее</a>
+							</div>
+						</li>
+						<li class="equipment__item">
+							<div class="equipment__content">
+								<h3 class="equipment__heading">Кардиотренажеры для зала</h3>
+								<a class="equipment__link" href="#">Подробнее</a>
+							</div>
+						</li>
+						<li class="equipment__item">
+							<div class="equipment__content">
+								<h3 class="equipment__heading">Кардиотренажеры для зала</h3>
+								<a class="equipment__link" href="#">Подробнее</a>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</section>
 
-    <section class="realise">
-      <div class="container realise__container">
-        <h2 class="title realise__title">Реализованные проекты</h2>
+			<section class="realise" id="realise">
+				<div class="container realise__container">
+					<h2 class="title realise__title">Реализованные проекты</h2>
 
-        <ul class="realise__items">
-          <li class="realise__btns">
-            <button class="btn realise__btn active" type="button">
-              Фитнес клубы
-            </button>
-          </li>
-          <li class="realise__btns">
-            <button class="btn realise__btn" type="button">
-              Тренажерные залы
-            </button>
-          </li>
-          <li class="realise__btns">
-            <button class="btn realise__btn" type="button">
-              Спортивные центры
-            </button>
-          </li>
-        </ul>
+					<ul class="realise__inner">
+						<button
+							class="btn realise__btn realise__btn--active"
+							data-id="clubs"
+						>
+							Фитнес клубы
+						</button>
 
-        <div class="realise__swiper">
+						<button class="btn realise__btn" data-id="gyms">
+							Тренажерные залы
+						</button>
 
-          <ul class="realise__slides">
+						<button class="btn realise__btn" data-id="centers">
+							Спортивные центры
+						</button>
+					</ul>
 
-            <li class="realise__slide">
-              <img class="realise__img" src="images/realise-slide.jpg" alt="realise slide-1" />
-              <p class="realise__text">
-                «X-FIT» — новый фитнес-клуб, открывшийся в Пушкино
-              </p>
-              <button class="realise__button" type="button">
-                Смотреть фото
-              </button>
-            </li>
+					<div class="realise__swiper swiper clubs">
+						<div class="realise__slides swiper-wrapper">
+							<div class="realise__slide swiper-slide">
+								<img
+									class="realise__img"
+									src="images/realise-slide.jpg"
+									alt="realise slide-1"
+								/>
+								<p class="realise__text">
+									«X-FIT» — новый фитнес-клуб, открывшийся в Пушкино
+								</p>
+								<button class="realise__button" type="button">
+									Смотреть фото
+								</button>
+							</div>
 
-            <li class="realise__slide">
-              <img class="realise__img" src="images/realise-slide.jpg" alt="realise slide-1" />
-              <p class="realise__text">
-                «X-FIT» — новый фитнес-клуб, открывшийся в Пушкино
-              </p>
-              <button class="realise__button" type="button">
-                Смотреть фото
-              </button>
-            </li>
+							<div class="realise__slide swiper-slide">
+								<img
+									class="realise__img"
+									src="images/realise-slide.jpg"
+									alt="realise slide-1"
+								/>
+								<p class="realise__text">
+									«X-FIT» — новый фитнес-клуб, открывшийся в Пушкино
+								</p>
+								<button class="realise__button" type="button">
+									Смотреть фото
+								</button>
+							</div>
 
-            <li class="realise__slide">
-              <img class="realise__img" src="images/realise-slide.jpg" alt="realise slide-1" />
-              <p class="realise__text">
-                «X-FIT» — новый фитнес-клуб, открывшийся в Пушкино
-              </p>
-              <button class="realise__button" type="button">
-                Смотреть фото
-              </button>
-            </li>
+							<div class="realise__slide swiper-slide">
+								<img
+									class="realise__img"
+									src="images/realise-slide.jpg"
+									alt="realise slide-1"
+								/>
+								<p class="realise__text">
+									«X-FIT» — новый фитнес-клуб, открывшийся в Пушкино
+								</p>
+								<button class="realise__button" type="button">
+									Смотреть фото
+								</button>
+							</div>
 
-          </ul>
+							<div class="realise__slide swiper-slide">
+								<img
+									class="realise__img"
+									src="images/realise-slide.jpg"
+									alt="realise slide-1"
+								/>
+								<p class="realise__text">
+									«X-FIT» — новый фитнес-клуб, открывшийся в Пушкино
+								</p>
+								<button class="realise__button" type="button">
+									Смотреть фото
+								</button>
+							</div>
 
-          <div class="swiper-button-next"></div>
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-pagination"></div>
+							<div class="realise__slide swiper-slide">
+								<img
+									class="realise__img"
+									src="images/realise-slide.jpg"
+									alt="realise slide-1"
+								/>
+								<p class="realise__text">
+									«X-FIT» — новый фитнес-клуб, открывшийся в Пушкино
+								</p>
+								<button class="realise__button" type="button">
+									Смотреть фото
+								</button>
+							</div>
 
-        </div>
+							<div class="realise__slide swiper-slide">
+								<img
+									class="realise__img"
+									src="images/realise-slide.jpg"
+									alt="realise slide-1"
+								/>
+								<p class="realise__text">
+									«X-FIT» — новый фитнес-клуб, открывшийся в Пушкино
+								</p>
+								<button class="realise__button" type="button">
+									Смотреть фото
+								</button>
+							</div>
 
-      </div>
-    </section>
+							<div class="realise__slide swiper-slide">
+								<img
+									class="realise__img"
+									src="images/realise-slide.jpg"
+									alt="realise slide-1"
+								/>
+								<p class="realise__text">
+									«X-FIT» — новый фитнес-клуб, открывшийся в Пушкино
+								</p>
+								<button class="realise__button" type="button">
+									Смотреть фото
+								</button>
+							</div>
+						</div>
 
-    <section class="new">
-      <div class="container">
-        <h2 class="title new__title">Новинки</h2>
+						<div class="swiper-button-prev"></div>
+						<div class="swiper-button-next"></div>
+						<div class="swiper-pagination"></div>
+					</div>
 
-        <ul class="new__list">
-          <li class="new__item">
-            <img class="new__img" src="images/equip.png" alt="new 1" width="240" height="250" />
-            <p class="new__text">
-              E-7035 тяга сверху. вертикальный блок (pulldown). стек 110 кг.
-            </p>
-          </li>
-          <li class="new__item">
-            <img class="new__img" src="images/equip.png" alt="new 2" width="240" height="250" />
-            <p class="new__text">
-              E-7035 тяга сверху. вертикальный блок (pulldown). стек 110 кг.
-            </p>
-          </li>
-          <li class="new__item">
-            <img class="new__img" src="images/equip.png" alt="new 3" width="240" height="250" />
-            <p class="new__text">
-              E-7035 тяга сверху. вертикальный блок (pulldown). стек 110 кг.
-            </p>
-          </li>
-          <li class="new__item">
-            <img class="new__img" src="images/equip.png" alt="new 4" width="240" height="250" />
-            <p class="new__text">905 Жим от груди (Chest Press)</p>
-          </li>
-        </ul>
-      </div>
-    </section>
+					<div class="realise__swiper swiper gyms">
+						<div class="realise__slides swiper-wrapper">
+							<div class="realise__slide swiper-slide">
+								<img
+									class="realise__img"
+									src="images/realise-slide.jpg"
+									alt="realise slide-1"
+								/>
+								<p class="realise__text">
+									«X-FIT» — новый тренажерный зал, открывшийся в Пушкино
+								</p>
+								<button class="realise__button" type="button">
+									Смотреть фото
+								</button>
+							</div>
 
-    <section class="services">
-      <div class="container">
-        <div class="btn services__link">
-          <a href="#">Комплекс услуг по октрытию фитнес-клуба</a>
-        </div>
-        <p class="services__text services__text--first">
-          Предлагает комплексный подход к запуску Вашего фитнес клуба. Наша
-          команда специалистов имеет более чем
-          <span class="services__text--bold">10 летний опыт</span> работы в
-          фитнес индустрии, мы проектировали, оснащали и
-          <span class="services__text--bold">обучали по всей России.</span>
-        </p>
-        <p class="services__text">
-          Имея опыт работы с фитнес клубами разных форматов эконом, бизнес и
-          премиум, мы учитываем все аспекты еще на стадии проектирования. Мы
-          разработаем для Вас
-          <span class="services__text--bold">индивидуальную концепцию и бизнес модель</span>
-          с учетом данного региона, местоположения и геометрии помещения.
-          Обучим Ваш персонал, внедрим четкие стандарты работы, при которых
-          каждый сотрудник знает свои права и обязанности что сводит к
-          минимуму количество внештатных ситуаций.
-        </p>
-      </div>
-    </section>
+							<div class="realise__slide swiper-slide">
+								<img
+									class="realise__img"
+									src="images/realise-slide.jpg"
+									alt="realise slide-1"
+								/>
+								<p class="realise__text">
+									«X-FIT» — новый тренажерный зал, открывшийся в Пушкино
+								</p>
+								<button class="realise__button" type="button">
+									Смотреть фото
+								</button>
+							</div>
 
-    <section class="catalog">
-      <div class="container">
-        <h2 class="title catalog__title">Каталоги</h2>
-        <div class="catalog__inner">
-          <p class="catalog__descr">
-            Предлагаем вам прямо сейчас ознакомиться с нашими каталогами:
-          </p>
-          <ul class="catalog__list">
-            <li class="catalog__item">
-              <h3 class="catalog__subtitle">Уличное оборудование</h3>
-              <span class="catalog__source"><a href="">PDF (5MB)</a></span>
-              <img class="new__img" src="images/equip.png" alt="new 1" width="240" height="250" />
-            </li>
-            <li class="catalog__item">
-              <h3 class="catalog__subtitle">Оборудование для залов</h3>
-              <span class="catalog__source"><a href="">PDF (5MB)</a></span>
-              <img class="new__img" src="images/equip.png" alt="new 2" width="240" height="250" />
-            </li>
-            <li class="catalog__item">
-              <h3 class="catalog__subtitle">Спортивное оборудование</h3>
-              <span class="catalog__source"><a href="">PDF (5MB)</a></span>
-              <img class="new__img" src="images/equip.png" alt="new 3" width="240" height="250" />
-            </li>
-          </ul>
-        </div>
-      </div>
-    </section>
+							<div class="realise__slide swiper-slide">
+								<img
+									class="realise__img"
+									src="images/realise-slide.jpg"
+									alt="realise slide-1"
+								/>
+								<p class="realise__text">
+									«X-FIT» — новый тренажерный зал, открывшийся в Пушкино
+								</p>
+								<button class="realise__button" type="button">
+									Смотреть фото
+								</button>
+							</div>
 
-    <section class="mail">
-      <div class="container">
-        <h2 class="mail__title">Оптовый прайс на почту</h2>
-        <p class="mail__descr">
-          В случае заинтересованности готовы направить вам прайс-лист с
-          оптовыми ценами.
-        </p>
-        <form class="mail__form" action="#">
-          <input class="mail__input" type="mail" placeholder="Ведите Ваш Email" />
-          <button class="btn mail__btn" type="button">Продолжить</button>
-        </form>
-      </div>
-    </section>
-  </main>
+							<div class="realise__slide swiper-slide">
+								<img
+									class="realise__img"
+									src="images/realise-slide.jpg"
+									alt="realise slide-1"
+								/>
+								<p class="realise__text">
+									«X-FIT» — новый тренажерный зал, открывшийся в Пушкино
+								</p>
+								<button class="realise__button" type="button">
+									Смотреть фото
+								</button>
+							</div>
 
-  <footer class="footer">
-    <div class="container">
-      <div class="footer__top">
-        <a class="logo footer__logo" href="#">
-          <img src="images/logo.svg" alt="logo" width="130" height="30" />
-        </a>
-        <p>&copy;&nbsp;2008&ndash;2021&nbsp;profi sport</p>
+							<div class="realise__slide swiper-slide">
+								<img
+									class="realise__img"
+									src="images/realise-slide.jpg"
+									alt="realise slide-1"
+								/>
+								<p class="realise__text">
+									«X-FIT» — новый тренажерный зал, открывшийся в Пушкино
+								</p>
+								<button class="realise__button" type="button">
+									Смотреть фото
+								</button>
+							</div>
 
-        <ul class="social footer__social">
-          <li class="social__item">
-            <a class="social__link" href="#">
-              <svg width="25" height="25">
-                <use xlink:href="images/sprite.svg#vk"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="social__item">
-            <a class="social__link" href="#">
-              <svg width="25" height="25">
-                <use xlink:href="images/sprite.svg#insta"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="social__item">
-            <a class="social__link" href="#">
-              <svg width="25" height="25">
-                <use xlink:href="images/sprite.svg#fb"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="social__item">
-            <a class="social__link" href="#">
-              <svg width="25" height="25">
-                <use xlink:href="images/sprite.svg#youtube"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
-      </div>
-      <div class="footer__mid">
-        <div class="footer__list-about">
-          <h3 class="footer__title">О компании</h3>
+							<div class="realise__slide swiper-slide">
+								<img
+									class="realise__img"
+									src="images/realise-slide.jpg"
+									alt="realise slide-1"
+								/>
+								<p class="realise__text">
+									«X-FIT» — новый тренажерный зал, открывшийся в Пушкино
+								</p>
+								<button class="realise__button" type="button">
+									Смотреть фото
+								</button>
+							</div>
+						</div>
 
-          <ul class="footer__items">
-            <li class="footer__item">
-              <a class="footer__link" href="#">Наши заводы</a>
-            </li>
-            <li class="footer__item">
-              <a class="footer__link" href="#">Новости</a>
-            </li>
-            <li class="footer__item">
-              <a class="footer__link" href="#">Медиа</a>
-            </li>
-            <li class="footer__item">
-              <a class="footer__link" href="#">Контакты</a>
-            </li>
-            <li class="footer__item">
-              <a class="footer__link" href="#">Сертификаты</a>
-            </li>
-          </ul>
-        </div>
+						<div class="swiper-button-prev"></div>
+						<div class="swiper-button-next"></div>
+						<div class="swiper-pagination"></div>
+					</div>
 
-        <div class="footer__list-service">
-          <h3 class="footer__title">Сервис</h3>
+					<div class="realise__swiper swiper centers">
+						<div class="realise__slides swiper-wrapper">
+							<div class="realise__slide swiper-slide">
+								<img
+									class="realise__img"
+									src="images/realise-slide.jpg"
+									alt="realise slide-1"
+								/>
+								<p class="realise__text">
+									«X-FIT» — новый спортивный цент, открывшийся в Пушкино
+								</p>
+								<button class="realise__button" type="button">
+									Смотреть фото
+								</button>
+							</div>
 
-          <ul class="footer__items">
-            <li class="footer__item">
-              <a class="footer__link" href="#">Гарантийные обязательства</a>
-            </li>
-            <li class="footer__item">
-              <a class="footer__link" href="#">Заявка на сервис</a>
-            </li>
-            <li class="footer__item">
-              <a class="footer__link" href="#">Доставка тренажеров</a>
-            </li>
-          </ul>
-        </div>
+							<div class="realise__slide swiper-slide">
+								<img
+									class="realise__img"
+									src="images/realise-slide.jpg"
+									alt="realise slide-1"
+								/>
+								<p class="realise__text">
+									«X-FIT» — новый спортивный цент, открывшийся в Пушкино
+								</p>
+								<button class="realise__button" type="button">
+									Смотреть фото
+								</button>
+							</div>
 
-        <div class="footer__list-products">
-          <h3 class="footer__title">Наша продукция</h3>
+							<div class="realise__slide swiper-slide">
+								<img
+									class="realise__img"
+									src="images/realise-slide.jpg"
+									alt="realise slide-1"
+								/>
+								<p class="realise__text">
+									«X-FIT» — новый спортивный цент, открывшийся в Пушкино
+								</p>
+								<button class="realise__button" type="button">
+									Смотреть фото
+								</button>
+							</div>
 
-          <ul class="footer__items">
-            <li class="footer__item">
-              <a class="footer__link" href="#">Для тренажерного зала</a>
-            </li>
-            <li class="footer__item">
-              <a class="footer__link" href="#">Для кроссфита</a>
-            </li>
-            <li class="footer__item">
-              <a class="footer__link" href="#">Для тяжелой атлетики</a>
-            </li>
-            <li class="footer__item">
-              <a class="footer__link" href="#">Для фитнеса</a>
-            </li>
-            <li class="footer__item">
-              <a class="footer__link" href="#">Для спортзала</a>
-            </li>
-          </ul>
-        </div>
+							<div class="realise__slide swiper-slide">
+								<img
+									class="realise__img"
+									src="images/realise-slide.jpg"
+									alt="realise slide-1"
+								/>
+								<p class="realise__text">
+									«X-FIT» — новый спортивный цент, открывшийся в Пушкино
+								</p>
+								<button class="realise__button" type="button">
+									Смотреть фото
+								</button>
+							</div>
 
-        <div class="footer__list-products">
-          <h3 class="footer__title">Покупателю</h3>
+							<div class="realise__slide swiper-slide">
+								<img
+									class="realise__img"
+									src="images/realise-slide.jpg"
+									alt="realise slide-1"
+								/>
+								<p class="realise__text">
+									«X-FIT» — новый спортивный цент, открывшийся в Пушкино
+								</p>
+								<button class="realise__button" type="button">
+									Смотреть фото
+								</button>
+							</div>
+						</div>
 
-          <ul class="footer__items">
-            <li class="footer__item">
-              <a class="footer__link" href="#">Регистрация</a>
-            </li>
-            <li class="footer__item">
-              <a class="footer__link" href="#">Сотрудничество</a>
-            </li>
-          </ul>
-        </div>
+						<div class="swiper-button-prev"></div>
+						<div class="swiper-button-next"></div>
+						<div class="swiper-pagination"></div>
+					</div>
+				</div>
+			</section>
 
-        <div class="footer__list-address">
-          <h3 class="footer__title">Адрес</h3>
+			<section class="new">
+				<div class="container">
+					<h2 class="title new__title">Новинки</h2>
 
-          <address class="footer__address">
-            999999, г. Москва, Красная Площадь, 1/1, строение 10
-          </address>
+					<ul class="new__list">
+						<li class="new__item">
+							<img
+								class="new__img"
+								src="images/equip.png"
+								alt="new 1"
+								width="240"
+								height="250"
+							/>
+							<p class="new__text">
+								E-7035 тяга сверху. вертикальный блок (pulldown). стек 110 кг.
+							</p>
+						</li>
+						<li class="new__item">
+							<img
+								class="new__img"
+								src="images/equip.png"
+								alt="new 2"
+								width="240"
+								height="250"
+							/>
+							<p class="new__text">
+								E-7035 тяга сверху. вертикальный блок (pulldown). стек 110 кг.
+							</p>
+						</li>
+						<li class="new__item">
+							<img
+								class="new__img"
+								src="images/equip.png"
+								alt="new 3"
+								width="240"
+								height="250"
+							/>
+							<p class="new__text">
+								E-7035 тяга сверху. вертикальный блок (pulldown). стек 110 кг.
+							</p>
+						</li>
+						<li class="new__item">
+							<img
+								class="new__img"
+								src="images/equip.png"
+								alt="new 4"
+								width="240"
+								height="250"
+							/>
+							<p class="new__text">905 Жим от груди (Chest Press)</p>
+						</li>
+					</ul>
+				</div>
+			</section>
 
-          <a class="footer__phone" href="tel:+79999999999">тел.: +7 (999)-999-99-99</a>
-          <a class="footer__phone" href="tel:+79999999999">тел.: +7 (999)-999-99-99</a>
+			<section class="services" id="services">
+				<div class="container">
+					<a class="btn services__link" href="#"
+						>Комплекс услуг по октрытию фитнес-клуба</a
+					>
 
-          <p class="footer__work">пн-пт: с 06:00 до 19:00 (МСК)</p>
-          <p class="footer__work">сб-вс: выходной</p>
-        </div>
-      </div>
+					<p class="services__text services__text--first">
+						Предлагает комплексный подход к запуску Вашего фитнес клуба. Наша
+						команда специалистов имеет более чем
+						<span class="services__text--bold">10 летний опыт</span> работы в
+						фитнес индустрии, мы проектировали, оснащали и
+						<span class="services__text--bold">обучали по всей России.</span>
+					</p>
+					<p class="services__text">
+						Имея опыт работы с фитнес клубами разных форматов эконом, бизнес и
+						премиум, мы учитываем все аспекты еще на стадии проектирования. Мы
+						разработаем для Вас
+						<span class="services__text--bold"
+							>индивидуальную концепцию и бизнес модель</span
+						>
+						с учетом данного региона, местоположения и геометрии помещения.
+						Обучим Ваш персонал, внедрим четкие стандарты работы, при которых
+						каждый сотрудник знает свои права и обязанности что сводит к
+						минимуму количество внештатных ситуаций.
+					</p>
+				</div>
+			</section>
 
-      <div class="footer__bot">
-        <p class="footer__bot-descr">
-          Xарактеристики, комплект поставки и внешний вид товара могут
-          отличаться от указанных или могут быть изменены производителем без
-          отражения в каталоге.
-        </p>
+			<section class="catalog" id="catalog">
+				<div class="container">
+					<h2 class="title catalog__title">Каталоги</h2>
+					<div class="catalog__inner">
+						<p class="catalog__descr">
+							Предлагаем вам прямо сейчас ознакомиться с нашими каталогами:
+						</p>
+						<ul class="catalog__list">
+							<li class="catalog__item">
+								<h3 class="catalog__subtitle">Уличное оборудование</h3>
+								<span class="catalog__source"><a href="">PDF (5MB)</a></span>
+								<img
+									class="catalog__img"
+									src="images/equip.png"
+									alt="new 1"
+									width="240"
+									height="250"
+								/>
+							</li>
+							<li class="catalog__item">
+								<h3 class="catalog__subtitle">Оборудование для залов</h3>
+								<span class="catalog__source"><a href="">PDF (5MB)</a></span>
+								<img
+									class="catalog__img"
+									src="images/equip.png"
+									alt="new 2"
+									width="240"
+									height="250"
+								/>
+							</li>
+							<li class="catalog__item">
+								<h3 class="catalog__subtitle">Спортивное оборудование</h3>
+								<span class="catalog__source"><a href="">PDF (5MB)</a></span>
+								<img
+									class="catalog__img"
+									src="images/equip.png"
+									alt="new 3"
+									width="240"
+									height="250"
+								/>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
 
-        <p class="footer__bot-text">
-          Приведенные на нашем сайте цены, характеристики, количество товаров,
-          а так же информация об их наличии на складе носят ознакомительный
-          характер и не являются публичной офертой, определенной пунктом 2
-          статьи 437 ГК РФ. Для получения информации о характеристиках
-          товаров, их наличии и стоимости необходимо связаться с менеджерами
-          нашей компании. Оплата производится только после подтверждения
-          резерва.
-        </p>
-      </div>
-    </div>
-  </footer>
+			<section class="mail">
+				<div class="container">
+					<h2 class="mail__title">Оптовый прайс на почту</h2>
+					<p class="mail__descr">
+						В случае заинтересованности готовы направить вам прайс-лист с
+						оптовыми ценами.
+					</p>
+					<form class="mail__form" action="#">
+						<input
+							class="mail__input"
+							type="mail"
+							placeholder="Ведите Ваш Email"
+						/>
+						<button class="btn mail__btn" type="button">Продолжить</button>
+					</form>
+				</div>
+			</section>
+		</main>
 
-  <script src="js/main.min.js"></script>
-</body>
+		<footer class="footer" id="contacts">
+			<div class="container">
+				<div class="footer__top">
+					<a class="logo footer__logo footer__top-item" href="#">
+						<img src="images/logo.svg" alt="logo" width="130" height="30" />
+					</a>
+					<p class="footer__top-item">
+						&copy;&nbsp;2008&ndash;2021&nbsp;profi sport
+					</p>
 
+					<ul class="social footer__social">
+						<li class="social__item">
+							<a class="social__link" href="#">
+								<svg width="25" height="25">
+									<use xlink:href="images/sprite.svg#vk"></use>
+								</svg>
+							</a>
+						</li>
+						<li class="social__item">
+							<a class="social__link" href="#">
+								<svg width="25" height="25">
+									<use xlink:href="images/sprite.svg#insta"></use>
+								</svg>
+							</a>
+						</li>
+						<li class="social__item">
+							<a class="social__link" href="#">
+								<svg width="25" height="25">
+									<use xlink:href="images/sprite.svg#fb"></use>
+								</svg>
+							</a>
+						</li>
+						<li class="social__item">
+							<a class="social__link" href="#">
+								<svg width="25" height="25">
+									<use xlink:href="images/sprite.svg#youtube"></use>
+								</svg>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="footer__mid">
+					<div class="footer__list footer__list-about">
+						<h3 class="footer__title">О компании</h3>
+
+						<ul class="footer__items">
+							<li class="footer__item">
+								<a class="footer__link" href="#">Наши заводы</a>
+							</li>
+							<li class="footer__item">
+								<a class="footer__link" href="#">Новости</a>
+							</li>
+							<li class="footer__item">
+								<a class="footer__link" href="#">Медиа</a>
+							</li>
+							<li class="footer__item">
+								<a class="footer__link" href="#">Контакты</a>
+							</li>
+							<li class="footer__item">
+								<a class="footer__link" href="#">Сертификаты</a>
+							</li>
+						</ul>
+					</div>
+
+					<div class="footer__list footer__list-service">
+						<h3 class="footer__title">Сервис</h3>
+
+						<ul class="footer__items">
+							<li class="footer__item">
+								<a class="footer__link" href="#">Гарантийные обязательства</a>
+							</li>
+							<li class="footer__item">
+								<a class="footer__link" href="#">Заявка на сервис</a>
+							</li>
+							<li class="footer__item">
+								<a class="footer__link" href="#">Доставка тренажеров</a>
+							</li>
+						</ul>
+					</div>
+
+					<div class="footer__list footer__list-products">
+						<h3 class="footer__title">Наша продукция</h3>
+
+						<ul class="footer__items">
+							<li class="footer__item">
+								<a class="footer__link" href="#">Для тренажерного зала</a>
+							</li>
+							<li class="footer__item">
+								<a class="footer__link" href="#">Для кроссфита</a>
+							</li>
+							<li class="footer__item">
+								<a class="footer__link" href="#">Для тяжелой атлетики</a>
+							</li>
+							<li class="footer__item">
+								<a class="footer__link" href="#">Для фитнеса</a>
+							</li>
+							<li class="footer__item">
+								<a class="footer__link" href="#">Для спортзала</a>
+							</li>
+						</ul>
+					</div>
+
+					<div class="footer__list footer__list-products">
+						<h3 class="footer__title">Покупателю</h3>
+
+						<ul class="footer__items">
+							<li class="footer__item">
+								<a class="footer__link" href="#">Регистрация</a>
+							</li>
+							<li class="footer__item">
+								<a class="footer__link" href="#">Сотрудничество</a>
+							</li>
+						</ul>
+					</div>
+
+					<div class="footer__list footer__list-address">
+						<h3 class="footer__title">Адрес</h3>
+
+						<address class="footer__address">
+							999999, г. Москва, Красная Площадь, 1/1, строение 10
+						</address>
+
+						<a class="footer__phone" href="tel:+79999999999"
+							>тел.: +7 (999)-999-99-99</a
+						>
+						<a class="footer__phone" href="tel:+79999999999"
+							>тел.: +7 (999)-999-99-99</a
+						>
+
+						<p class="footer__work">пн-пт: с 06:00 до 19:00 (МСК)</p>
+						<p class="footer__work">сб-вс: выходной</p>
+					</div>
+				</div>
+
+				<div class="footer__bot">
+					<p class="footer__bot-descr">
+						Xарактеристики, комплект поставки и внешний вид товара могут
+						отличаться от указанных или могут быть изменены производителем без
+						отражения в каталоге.
+					</p>
+
+					<p class="footer__bot-text">
+						Приведенные на нашем сайте цены, характеристики, количество товаров,
+						а так же информация об их наличии на складе носят ознакомительный
+						характер и не являются публичной офертой, определенной пунктом 2
+						статьи 437 ГК РФ. Для получения информации о характеристиках
+						товаров, их наличии и стоимости необходимо связаться с менеджерами
+						нашей компании. Оплата производится только после подтверждения
+						резерва.
+					</p>
+				</div>
+			</div>
+		</footer>
+
+		<script src="js/main.min.js"></script>
+	</body>
 </html>
