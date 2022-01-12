@@ -150,32 +150,109 @@
 							<form class="form__content" action="#">
 								<div class="form__content-inner">
 									<h2 class="form__title">Вывести в файл следующие цены:</h2>
-									<input type="radio" />
-									<label for="">Не выводить цену КП</label>
-									<input type="radio" />
-									<label for="">Вывести базовую оптовую цену товара</label>
-									<input type="radio" />
-									<label for="">Оставить ее по-умолчанию</label>
-									<input type="radio" />
-									<label for="">Изменить ее на</label>
-									<input type="radio" />
-									<label for="">Вывести рекомендованную розничную цену</label>
-									<input type="radio" />
-									<label for="">Оставить ее по-умолчанию</label>
-									<input type="radio" />
-									<label for="">Изменить ее на</label>
-									<input type="checkbox" />
-									<label for="">Вывести наименование компании-покупателя</label>
-									<input type="text" placeholder="Наименование" />
-									<input type="checkbox" />
-									<label for="">Изменить название компании-поставщика</label>
-									<input type="text" placeholder="Наименование" />
-									<input type="checkbox" />
-									<label for="">Изменить адрес компании-поставщика</label>
-									<textarea placeholder="Наименование"></textarea>
-									<input type="checkbox" />
-									<label for="">Добавить комментарий</label>
-									<textarea placeholder="Наименование"></textarea>
+
+									<div class="form__radio">
+										<input
+											id="radio-1"
+											type="radio"
+											name="radio"
+											value="1"
+											checked
+										/>
+										<label for="radio-1">Не выводить цены в КП</label>
+									</div>
+
+									<div class="form__radio">
+										<input id="radio-2" type="radio" name="radio" value="2" />
+										<label for="radio-2"
+											>Вывести базовую оптовую цену товара</label
+										>
+									</div>
+
+									<div class="form__radio form__radio--underline">
+										<input id="radio-" type="radio" name="radio" value="" />
+										<label for="radio-">Оставить ее по-умолчанию</label>
+									</div>
+
+									<div class="form__radio form__radio--underline">
+										<input id="radio-" type="radio" name="radio" value="" />
+										<label for="radio-">Изменить её на</label>
+										<span class="form__radio--num">20</span>
+									</div>
+
+									<div class="form__radio">
+										<input id="radio-3" type="radio" name="radio" value="3" />
+										<label for="radio-3"
+											>Вывести рекомендованную розничную цену</label
+										>
+									</div>
+
+									<div class="form__radio form__radio--underline">
+										<input id="radio-" type="radio" name="radio" value="" />
+										<label for="radio-">Оставить ее по-умолчанию</label>
+									</div>
+
+									<div class="form__radio form__radio--underline">
+										<input id="radio-" type="radio" name="radio" value="" />
+										<label for="radio-">Изменить её на</label>
+										<span class="form__radio--num">20</span>
+									</div>
+
+									<div class="form-check__inner">
+										<label class="form-check">
+											<input
+												class="form-check__input"
+												type="checkbox"
+												checked="checked"
+											/>
+											<span class="form-check__text"
+												>Вывести наименование компании-покупателя</span
+											>
+											<input
+												class="form-check__field"
+												type="text"
+												placeholder="Наименование"
+											/>
+										</label>
+									</div>
+
+									<div class="form-check__inner">
+										<label class="form-check">
+											<input class="form-check__input" type="checkbox" />
+											<span class="form-check__text"
+												>Изменить название компании-поставщика</span
+											>
+											<input
+												class="form-check__field"
+												type="text"
+												placeholder="Наименование"
+											/>
+										</label>
+									</div>
+
+									<div class="form-check__inner">
+										<label class="form-check">
+											<input class="form-check__input" type="checkbox" />
+											<span class="form-check__text"
+												>Изменить название компании-поставщика</span
+											>
+											<textarea
+												class="form-check__field form-check__field--area"
+												placeholder="Наименование"
+											></textarea>
+										</label>
+									</div>
+
+									<div class="form-check__inner">
+										<label class="form-check">
+											<input class="form-check__input" type="checkbox" />
+											<span class="form-check__text">Добавить комментарий</span>
+											<textarea
+												class="form-check__field form-check__field--area"
+												placeholder="Наименование"
+											></textarea>
+										</label>
+									</div>
 								</div>
 							</form>
 							<div class="form__result">

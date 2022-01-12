@@ -8,35 +8,8 @@
 		justify-content: space-between;
 	}
 
-	&__imgs {
-		margin-right: 70px;
-	}
-
-	&__main-img {
-		margin-bottom: 45px;
-		box-shadow: 0px 2.51651px 15.7282px rgba(0, 0, 0, 0.13);
-		border-radius: 7.16113px;
-	}
-
 	&__img-list {
 		display: flex;
-		flex-wrap: wrap;
-		margin-bottom: 42px;
-
-		&--live {
-			margin-bottom: 65px;
-		}
-	}
-
-	&__img-item {
-		width: 105px;
-		height: 105px;
-		box-shadow: 0px 2.51651px 15.7282px rgba(0, 0, 0, 0.13);
-		border-radius: 7.16px;
-
-		&:not(:last-child) {
-			margin-right: 10px;
-		}
 	}
 
 	&__text {

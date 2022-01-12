@@ -9,9 +9,16 @@ selects.forEach((el) => {
 	});
 });
 
-const select = document.querySelector('.form__result-select');
+const selectResult = document.querySelector('.form__result-select');
 
-('use strict');
+const choices = new Choices(selectResult, {
+	shouldSort: false,
+	position: 'bottom',
+	searchEnabled: false,
+	itemSelectText: '',
+});
+
+selectResult('use strict');
 
 // main-page slide
 const swiper = new Swiper('.swiper', {
@@ -115,3 +122,20 @@ $(function () {
 		);
 	});
 });
+
+//input number
+
+function increaseValue() {
+	let value = parseInt(document.getElementById('number').value, 10);
+	value = isNaN(value) ? 0 : value;
+	value++;
+	document.getElementById('number').value = value;
+}
+
+function decreaseValue() {
+	let value = parseInt(document.getElementById('number').value, 10);
+	value = isNaN(value) ? 0 : value;
+	value < 1 ? (value = 1) : '';
+	value--;
+	document.getElementById('number').value = value;
+}
