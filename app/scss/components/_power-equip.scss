@@ -214,6 +214,7 @@
 }
 
 .is-open .choices__list--dropdown {
+	top: 25px;
 	word-break: unset;
 	border-color: $chrome-yellow;
 	border-radius: 10px;
@@ -249,7 +250,7 @@
 		}
 
 		&__list {
-			grid-template-columns: repeat(1, 1fr);
+			grid-template-columns: repeat(1, 330px);
 		}
 	}
 }

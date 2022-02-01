@@ -90,7 +90,20 @@
 		}
 
 		&__descr {
+			text-align: center;
 			font-size: 26px;
+		}
+
+		&__list {
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+		}
+
+		&__item {
+			&:not(:last-child) {
+				margin-right: 0;
+			}
 		}
 	}
 }

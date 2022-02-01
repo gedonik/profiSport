@@ -137,14 +137,24 @@
 			align-items: center;
 		}
 
-		&__item,
-		&__form {
+		&__equip {
+			min-width: unset;
+			width: 100%;
+		}
+
+		&__item {
 			max-width: 400px;
 			margin-bottom: 20px;
 		}
 
+		&__form {
+			max-width: 330px;
+			width: 100%;
+			padding: 15px;
+		}
+
 		&__list {
-			margin-right: 15px;
+			margin-right: 0;
 		}
 	}
 }

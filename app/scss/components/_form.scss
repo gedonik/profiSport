@@ -188,3 +188,32 @@
 		}
 	}
 }
+
+@media (max-width: 1100px) {
+	.cart-categories {
+		max-width: 330px;
+		width: 100%;
+	}
+}
+
+@media (max-width: 450px) {
+	.form__content-inner {
+		padding: 15px;
+	}
+
+	.form__radio--num {
+		margin-left: 0;
+		padding: 5px 10px;
+		font-size: 12px;
+
+		&::after {
+			font-size: 16px;
+			right: -30px;
+		}
+	}
+
+	.form .form-check__field {
+		max-width: none;
+		margin-left: unset;
+	}
+}

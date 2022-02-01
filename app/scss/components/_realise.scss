@@ -46,24 +46,23 @@
 	&__slide {
 		position: relative;
 		border-radius: 10px;
-		max-width: 350px;
-		transition: all 0.5s ease-in-out;
 
 		&:hover {
 			.realise__img {
 				filter: brightness(24%);
-				transition: all 0.5s ease-in-out;
+				transition: filter 0.5s ease-in-out;
 			}
 
 			.realise__text {
 				max-width: 350px;
 				width: 100%;
 				font-size: 18px;
+				transition: font-size 0.5s ease-in-out;
 			}
 
 			.realise__button {
 				opacity: 1;
-				transition: all 0.5s ease-in-out;
+				transition: color 0.5s ease-in-out;
 
 				&:hover {
 					background-color: $chrome-yellow;
@@ -210,6 +209,10 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
 			justify-content: center;
 		}
 
+		&__img {
+			width: 100%;
+		}
+
 		&__button {
 			top: 50%;
 			left: 50%;
@@ -217,8 +220,7 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
 		}
 
 		&__btn {
-			width: 150px;
-			height: 80px;
+			width: auto;
 			padding: 12px 15px;
 			font-size: 14px;
 		}

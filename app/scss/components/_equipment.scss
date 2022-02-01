@@ -2,17 +2,19 @@
 	padding: 90px 0 115px;
 
 	&__title {
+		max-width: 320px;
 		margin-bottom: 72px;
 	}
 
 	&__list {
 		display: grid;
 		grid-template-columns: repeat(3, 1fr);
-		grid-gap: 40px;
+		grid-gap: 15px;
 	}
 
 	&__item {
 		position: relative;
+		width: 100%;
 		min-height: 270px;
 		border-radius: 10px;
 		filter: drop-shadow(0px 4.02975px 25.186px rgba(0, 0, 0, 0.19));
@@ -32,6 +34,7 @@
 
 			.equipment__heading {
 				transform: translateY(120%);
+				transition: all 0.3s ease-in-out;
 			}
 
 			.equipment__heading,
@@ -63,7 +66,7 @@
 		&::after {
 			content: '';
 			position: absolute;
-			bottom: 0;
+			top: 50%;
 			right: 0;
 			width: 196px;
 			height: 185px;
@@ -71,18 +74,21 @@
 			background-repeat: no-repeat;
 			background-position: center center;
 			z-index: 2;
+			transform: translateY(-30%);
+			transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
 		}
 
 		&::before {
 			content: '';
 			position: absolute;
-			bottom: -36px;
+			bottom: 0;
 			right: 0;
 			width: 100%;
 			height: 100%;
-			background-image: url('../images/sprite.svg#equipment-bg');
+			background-image: url('../images/back.png');
 			background-repeat: no-repeat;
-			background-size: cover;
+			background-size: 100% 50%;
+			background-position: bottom center;
 			z-index: 1;
 		}
 	}
@@ -110,6 +116,7 @@
 		position: relative;
 		padding-bottom: 5px;
 		color: $yankees-blue;
+		transition: color 0.5s ease-in-out;
 
 		&::after {
 			content: '';

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 	<head>
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -54,7 +54,7 @@
 					</div>
 					<form class="header__form" action="#">
 						<input class="header__input" type="text" />
-						<button class="btn header__search" type="button">
+						<button class="btn header__search" type="button" aria-label="Поиск">
 							<svg width="10" height="10">
 								<use xlink:href="images/sprite.svg#search"></use>
 							</svg>
@@ -74,6 +74,7 @@
 			>
 				<div class="container">
 					<div class="hero__content">
+						<span class="visually-hidden">ProfiSport</span>
 						<h1 class="hero__title">
 							Лучший <br />
 							Интернет-магазин спортивного оборудования
@@ -85,7 +86,7 @@
 					</div>
 
 					<div class="hero__reason">
-						<span class="hero__question">Почему мы?</span>
+						<h2 class="hero__question">Почему мы?</h2>
 
 						<ul class="hero__list">
 							<li class="hero__item">Скорость доставки</li>
@@ -100,46 +101,57 @@
 			<section class="equipment">
 				<div class="container">
 					<h2 class="title equipment__title">
-						Оборудование<br />
-						для тренажерного зала
+						Оборудование для&nbsp;тренажерного зала
 					</h2>
 
 					<ul class="equipment__list">
 						<li class="equipment__item">
-							<div class="equipment__content">
-								<h3 class="equipment__heading">Кардиотренажеры для зала</h3>
-								<a class="equipment__link" href="#">Подробнее</a>
-							</div>
+							<a href="#">
+								<div class="equipment__content">
+									<h3 class="equipment__heading">Кардиотренажеры для зала</h3>
+									<a class="equipment__link" href="#">Подробнее</a>
+								</div>
+							</a>
 						</li>
 						<li class="equipment__item">
-							<div class="equipment__content">
-								<h3 class="equipment__heading">Кардиотренажеры для зала</h3>
-								<a class="equipment__link" href="#">Подробнее</a>
-							</div>
+							<a href="#">
+								<div class="equipment__content">
+									<h3 class="equipment__heading">Кардиотренажеры для зала</h3>
+									<a class="equipment__link" href="#">Подробнее</a>
+								</div>
+							</a>
 						</li>
 						<li class="equipment__item">
-							<div class="equipment__content">
-								<h3 class="equipment__heading">Кардиотренажеры для зала</h3>
-								<a class="equipment__link" href="#">Подробнее</a>
-							</div>
+							<a href="#">
+								<div class="equipment__content">
+									<h3 class="equipment__heading">Кардиотренажеры для зала</h3>
+									<a class="equipment__link" href="#">Подробнее</a>
+								</div>
+							</a>
 						</li>
 						<li class="equipment__item">
-							<div class="equipment__content">
-								<h3 class="equipment__heading">Кардиотренажеры для зала</h3>
-								<a class="equipment__link" href="#">Подробнее</a>
-							</div>
+							<a href="#">
+								<div class="equipment__content">
+									<h3 class="equipment__heading">Кардиотренажеры для зала</h3>
+									<a class="equipment__link" href="#">Подробнее</a>
+								</div>
+							</a>
 						</li>
 						<li class="equipment__item">
-							<div class="equipment__content">
-								<h3 class="equipment__heading">Кардиотренажеры для зала</h3>
-								<a class="equipment__link" href="#">Подробнее</a>
-							</div>
+							<a href="#">
+								<div class="equipment__content">
+									<h3 class="equipment__heading">Кардиотренажеры для зала</h3>
+									<a class="equipment__link" href="#">Подробнее</a>
+								</div>
+							</a>
 						</li>
 						<li class="equipment__item">
-							<div class="equipment__content">
-								<h3 class="equipment__heading">Кардиотренажеры для зала</h3>
-								<a class="equipment__link" href="#">Подробнее</a>
-							</div>
+							<a href="#">
+								<div class="equipment__content">
+									<h3 class="equipment__heading">Кардиотренажеры для зала</h3>
+									<a class="equipment__link" href="#">Подробнее</a>
+								</div>
+							</a>
 						</li>
 					</ul>
 				</div>
@@ -149,7 +161,7 @@
 				<div class="container realise__container">
 					<h2 class="title realise__title">Реализованные проекты</h2>
 
-					<ul class="realise__inner">
+					<div class="realise__inner">
 						<button
 							class="btn realise__btn realise__btn--active"
 							data-id="clubs"
@@ -164,7 +176,7 @@
 						<button class="btn realise__btn" data-id="centers">
 							Спортивные центры
 						</button>
-					</ul>
+					</div>
 
 					<div class="realise__swiper swiper clubs">
 						<div class="realise__slides swiper-wrapper">
@@ -450,56 +462,65 @@
 
 					<ul class="new__list">
 						<li class="new__item">
-							<img
-								class="new__img"
-								src="images/equip.png"
-								alt="new 1"
-								width="240"
-								height="250"
-							/>
-							<p class="new__text">
-								E-7035 тяга сверху. вертикальный блок (pulldown). стек 110 кг.
-							</p>
+							<a class="new__link" href="#">
+								<img
+									class="new__img"
+									src="images/equip.png"
+									alt="new 1"
+									width="240"
+									height="250"
+								/>
+								<p class="new__text">
+									E-7035 тяга сверху. вертикальный блок (pulldown). стек 110 кг.
+								</p>
+							</a>
 						</li>
 						<li class="new__item">
-							<img
-								class="new__img"
-								src="images/equip.png"
-								alt="new 2"
-								width="240"
-								height="250"
-							/>
-							<p class="new__text">
-								E-7035 тяга сверху. вертикальный блок (pulldown). стек 110 кг.
-							</p>
+							<a class="new__link" href="#">
+								<img
+									class="new__img"
+									src="images/equip.png"
+									alt="new 2"
+									width="240"
+									height="250"
+								/>
+								<p class="new__text">
+									E-7035 тяга сверху. вертикальный блок (pulldown). стек 110 кг.
+								</p>
+							</a>
 						</li>
 						<li class="new__item">
-							<img
-								class="new__img"
-								src="images/equip.png"
-								alt="new 3"
-								width="240"
-								height="250"
-							/>
-							<p class="new__text">
-								E-7035 тяга сверху. вертикальный блок (pulldown). стек 110 кг.
-							</p>
+							<a class="new__link" href="#">
+								<img
+									class="new__img"
+									src="images/equip.png"
+									alt="new 3"
+									width="240"
+									height="250"
+								/>
+								<p class="new__text">
+									E-7035 тяга сверху. вертикальный блок (pulldown). стек 110 кг.
+								</p>
+							</a>
 						</li>
 						<li class="new__item">
-							<img
-								class="new__img"
-								src="images/equip.png"
-								alt="new 4"
-								width="240"
-								height="250"
-							/>
-							<p class="new__text">905 Жим от груди (Chest Press)</p>
+							<a class="new__link" href="#">
+								<img
+									class="new__img"
+									src="images/equip.png"
+									alt="new 4"
+									width="240"
+									height="250"
+								/>
+								<p class="new__text">905 Жим от груди (Chest Press)</p>
+							</a>
 						</li>
 					</ul>
 				</div>
 			</section>
 
 			<section class="services" id="services">
+				<h2 class="visually-hidden">Услуги по открытию фитнес-клуба</h2>
 				<div class="container">
 					<a class="btn services__link" href="#"
 						>Комплекс услуг по октрытию фитнес-клуба</a
@@ -537,7 +558,7 @@
 						<ul class="catalog__list">
 							<li class="catalog__item">
 								<h3 class="catalog__subtitle">Уличное оборудование</h3>
-								<span class="catalog__source"><a href="">PDF (5MB)</a></span>
+								<span class="catalog__source"><a href="#">PDF (5MB)</a></span>
 								<img
 									class="catalog__img"
 									src="images/equip.png"
@@ -583,7 +604,7 @@
 					<form class="mail__form" action="#">
 						<input
 							class="mail__input"
-							type="mail"
+							type="email"
 							placeholder="Ведите Ваш Email"
 						/>
 						<button class="btn mail__btn" type="button">Продолжить</button>
@@ -746,6 +767,6 @@
 			</div>
 		</footer>
 
-		<script src="js/main.min.js"></script>
+		<script src="js/main.min.js" defer></script>
 	</body>
 </html>

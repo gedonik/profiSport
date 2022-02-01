@@ -74,76 +74,129 @@
               <a class="breadcrumbs__link breadcrumbs__link-main" href="#">Главная</a>
             </li>
             <li class="breadcrumbs__item">
-              <span class="breadcrumbs__link breadcrumbs__link-main" href="#">Каталог</span>
+              <a class="breadcrumbs__link breadcrumbs__link-main" href="#catalog">Каталог</a>
             </li>
             <li class="breadcrumbs__item">
-              <span class="breadcrumbs__link" href="#">905 Жим от груди (Chest Press)</span>
+              <a class="breadcrumbs__link">905 Жим от груди (Chest Press)</a>
             </li>
           </ul>
         </div>
 
         <h1 class="product-card__title">905 Жим от груди (Chest Press)</h1>
-
-        <div class="product-card__inner">
-          <div class="product-card__wrapper">
-            <div class="product-card__slider">
-
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <img src="images/equip.png" alt="product-img-1">
-                </div>
-                <div class="swiper-slide">
-                  <img src="images/equip.png" alt="product-img-2">
-                </div>
-                <div class="swiper-slide">
-                  <img src="images/equip.png" alt="product-img-3">
-                </div>
-                <div class="swiper-slide">
-                  <img src="images/equip.png" alt="product-img-4">
+        <div class="product-card__wrapper">
+          <div class="product-card__inner">
+            <div class="product-images">
+              <div class="product-images-slider">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="images/product-main.jpg" alt="product 1" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="images/product-main.jpg" alt="product 1" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="images/product-main.jpg" alt="product 1" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="images/product-main.jpg" alt="product 1" />
+                  </div>
                 </div>
               </div>
-              
+              <div class="product-images-nav" thumbsslider="">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="images/equip.png" alt="product 1" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="images/equip.png" alt="product 1" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="images/equip.png" alt="product 1" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="images/equip.png" alt="product 1" />
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="product-card__live">
-              <p class="product-card__text">Живые фото</р>
 
-                <ul class="product-card__img-list product-card__img-list--live">
-                  <li class="product-card__img-item"><img src="images/equip.png" alt="product-img-1"></li>
-                  <li class="product-card__img-item"><img src="images/equip.png" alt="product-img-2"></li>
-                  <li class="product-card__img-item"><img src="images/equip.png" alt="product-img-3"></li>
-                </ul>
+            <div class="product-card__live">
+              <p class="product-card__text">Живые фото</p>
+
+              <ul class="product-card__img-list product-card__img-list--live">
+                <li class="product-card__img-item">
+                  <img src="images/equip.png" alt="product-img-1" />
+                </li>
+                <li class="product-card__img-item">
+                  <img src="images/equip.png" alt="product-img-2" />
+                </li>
+                <li class="product-card__img-item">
+                  <img src="images/equip.png" alt="product-img-3" />
+                </li>
+              </ul>
             </div>
           </div>
+
           <div class="product-card__descr">
             <h2 class="product-card__descr-title">Характеристики</h2>
 
             <div class="product-card__descr-inner">
-              <p class="product-card__descr-item"><span>Цвет рамы</span>Черно-желтый (другие цвета-опционально)</p>
-              <p class="product-card__descr-item"><span>Цвет обивки</span>Черный</p>
-              <p class="product-card__descr-item"><span>Габариты (Д*Ш*В) мм</span>1500*1200*1715</p>
-              <p class="product-card__descr-item"><span>Профиль</span>остальной профиль, толщина стенки 3 мм</p>
+              <p class="product-card__descr-item">
+                <span>Цвет рамы</span>Черно-желтый (другие цвета-опционально)
+              </p>
+              <p class="product-card__descr-item">
+                <span>Цвет обивки</span>Черный
+              </p>
+              <p class="product-card__descr-item">
+                <span>Габариты<span class="product-card__descr-item--param">(Д*Ш*В) мм</span></span>1500*1200*1715
+              </p>
+              <p class="product-card__descr-item">
+                <span>Профиль</span>остальной профиль, толщина стенки 3 мм
+              </p>
               <p class="product-card__descr-item"><span>Вес</span>164 кг</p>
             </div>
 
             <span class="product-card__price">146 090 руб.</span>
             <span class="product-card__avail">Наличие: <span>на складе</span></span>
-            <button class="btn product-card__btn" type="submit">Купить</button>
+            <button class="btn product-card__btn" type="submit">
+              Купить
+            </button>
           </div>
         </div>
 
-        <div class="product-tabs">
-          <ul class="product-tabs__list">
-            <li class="product-tabs__item product-tabs__item--active">Описание</li>
-            <li class="product-tabs__item">Сертификаты</li>
-            <li class="product-tabs__item">Отзывы</li>
+        <div class="tabs">
+          <ul class="tabs__list">
+            <li class="tabs__item">
+              <button class="tabs__btn btn tabs__btn--active" data-tabs-path="description">Описание</button>
+            </li>
+            <li class="tabs__item">
+              <button class="tabs__btn btn" data-tabs-path="certificates">Сертификаты</button>
+            </li>
+            <li class="tabs__item">
+              <button class="tabs__btn btn" data-tabs-path="feedbacks">Отзывы</button>
+            </li>
           </ul>
 
-          <div class="product-tabs__content">
-            <p class="product-tabs__text">Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt
-              tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williams burg carles vegan
-              helvetica. Reprehenderit butcher retro keffiyeh dreamc atcher synth. Cosby sweater eu banh mi, qui irure
-              terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american
-              apparel, butcher voluptate nisi qui.</p>
+          <div class="tabs__content tabs__content--active" data-tabs-target="description">
+            <div class="content">
+              <p class="content__descr">Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu
+                stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williams burg carles vegan
+                helvetica. Reprehenderit butcher retro keffiyeh dreamc atcher synth. Cosby sweater eu banh mi, qui irure
+                terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american
+                apparel, butcher voluptate nisi qui.</p>
+            </div>
+          </div>
+
+          <div class="tabs__content" data-tabs-target="certificates">
+            <div class="content">
+              <p class="content__descr">test2</p>
+            </div>
+          </div>
+
+          <div class="tabs__content" data-tabs-target="feedbacks">
+            <div class="content">
+              <p class="content__descr">test3</p>
+            </div>
           </div>
         </div>
 
@@ -152,9 +205,7 @@
         <ul class="power-equip__list">
           <li class="power-equip__item">
             <img class="power-equip__img" src="images/equip.png" alt="power-card-4" />
-            <p class="power-equip__descr">
-              905 Жим от груди (Chest Press)
-            </p>
+            <p class="power-equip__descr">905 Жим от груди (Chest Press)</p>
             <div class="power-equip__inner-text">
               <p class="power-equip__text">
                 Цвет рамы: Черно-желтый (другие цвета-опционально)
@@ -171,9 +222,7 @@
           </li>
           <li class="power-equip__item">
             <img class="power-equip__img" src="images/equip.png" alt="power-card-4" />
-            <p class="power-equip__descr">
-              905 Жим от груди (Chest Press)
-            </p>
+            <p class="power-equip__descr">905 Жим от груди (Chest Press)</p>
             <div class="power-equip__inner-text">
               <p class="power-equip__text">
                 Цвет рамы: Черно-желтый (другие цвета-опционально)
@@ -190,9 +239,7 @@
           </li>
           <li class="power-equip__item">
             <img class="power-equip__img" src="images/equip.png" alt="power-card-4" />
-            <p class="power-equip__descr">
-              905 Жим от груди (Chest Press)
-            </p>
+            <p class="power-equip__descr">905 Жим от груди (Chest Press)</p>
             <div class="power-equip__inner-text">
               <p class="power-equip__text">
                 Цвет рамы: Черно-желтый (другие цвета-опционально)
@@ -209,9 +256,7 @@
           </li>
           <li class="power-equip__item">
             <img class="power-equip__img" src="images/equip.png" alt="power-card-4" />
-            <p class="power-equip__descr">
-              905 Жим от груди (Chest Press)
-            </p>
+            <p class="power-equip__descr">905 Жим от груди (Chest Press)</p>
             <div class="power-equip__inner-text">
               <p class="power-equip__text">
                 Цвет рамы: Черно-желтый (другие цвета-опционально)
@@ -227,7 +272,7 @@
             </div>
           </li>
         </ul>
-
+      </div>
     </section>
   </main>
 
@@ -356,8 +401,8 @@
           <a class="footer__phone" href="tel:+79999999999">тел.: +7 (999)-999-99-99</a>
           <a class="footer__phone" href="tel:+79999999999">тел.: +7 (999)-999-99-99</a>
 
-          <p class="footer__work">пн-пт: с 06:00 до 19:00 (МСК)</p>
-          <p class="footer__work">сб-вс: выходной</p>
+          <p class="footer__product">пн-пт: с 06:00 до 19:00 (МСК)</p>
+          <p class="footer__product">сб-вс: выходной</p>
         </div>
       </div>
 

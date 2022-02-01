@@ -77,8 +77,8 @@
 								>
 							</li>
 							<li class="breadcrumbs__item">
-								<span class="breadcrumbs__link" href="#"
-									>Сформировать коммерческое предложение для клиента</span
+								<a class="breadcrumbs__link"
+									>Сформировать коммерческое предложение для клиента</a
 								>
 							</li>
 						</ul>
@@ -137,7 +137,7 @@
 								<h2 class="catalog-page__form-title">Оптовый прайс на почту</h2>
 								<input
 									class="catalog-page__mail"
-									type="text"
+									type="email"
 									placeholder="Введите ваш Email"
 								/>
 								<button class="btn catalog-page__btn" type="submit">
@@ -152,49 +152,55 @@
 									<h2 class="form__title">Вывести в файл следующие цены:</h2>
 
 									<div class="form__radio">
-										<input
-											id="radio-1"
-											type="radio"
-											name="radio"
-											value="1"
-											checked
-										/>
+										<input id="radio-1" type="radio" name="main-cat" checked />
 										<label for="radio-1">Не выводить цены в КП</label>
 									</div>
 
 									<div class="form__radio">
-										<input id="radio-2" type="radio" name="radio" value="2" />
+										<input
+											id="radio-2"
+											type="radio"
+											name="main-cat-wholesale"
+										/>
 										<label for="radio-2"
 											>Вывести базовую оптовую цену товара</label
 										>
 									</div>
 
 									<div class="form__radio form__radio--underline">
-										<input id="radio-" type="radio" name="radio" value="" />
-										<label for="radio-">Оставить ее по-умолчанию</label>
+										<input
+											id="radio-2.1"
+											type="radio"
+											name="sub-cat-wholesale"
+										/>
+										<label for="radio-2.1">Оставить ее по-умолчанию</label>
 									</div>
 
 									<div class="form__radio form__radio--underline">
-										<input id="radio-" type="radio" name="radio" value="" />
-										<label for="radio-">Изменить её на</label>
+										<input
+											id="radio-2.2"
+											type="radio"
+											name="sub-cat-wholesale"
+										/>
+										<label for="radio-2.2">Изменить её на</label>
 										<span class="form__radio--num">20</span>
 									</div>
 
 									<div class="form__radio">
-										<input id="radio-3" type="radio" name="radio" value="3" />
+										<input id="radio-3" type="radio" name="main-cat-retail" />
 										<label for="radio-3"
 											>Вывести рекомендованную розничную цену</label
 										>
 									</div>
 
 									<div class="form__radio form__radio--underline">
-										<input id="radio-" type="radio" name="radio" value="" />
-										<label for="radio-">Оставить ее по-умолчанию</label>
+										<input id="radio-3.1" type="radio" name="sub-cat-retail" />
+										<label for="radio-3.1">Оставить ее по-умолчанию</label>
 									</div>
 
 									<div class="form__radio form__radio--underline">
-										<input id="radio-" type="radio" name="radio" value="" />
-										<label for="radio-">Изменить её на</label>
+										<input id="radio-3.2" type="radio" name="sub-cat-retail" />
+										<label for="radio-3.2">Изменить её на</label>
 										<span class="form__radio--num">20</span>
 									</div>
 
@@ -256,11 +262,6 @@
 								</div>
 							</form>
 							<div class="form__result">
-								<select class="form__result-select">
-									<option value="">PDF</option>
-									<option value="">JPG</option>
-								</select>
-
 								<button class="btn form__result-btn" type="submit">
 									Экспорт
 								</button>
